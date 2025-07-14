@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (allCompleted && requiredCompleted) {
             secondSemester.classList.add('active');
             secondSemester.classList.remove('inactive');
-            secondSemester.querySelector('.status-text').textContent = 'Activo';
             secondSemester.querySelector('.status-dot').textContent = '●';
         }
 
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (allYear1Completed && facturacionCajaOk) {
             prácticas.classList.add('active');
             prácticas.classList.remove('inactive');
-            prácticas.querySelector('.status-text').textContent = 'Activo';
             prácticas.querySelector('.status-dot').textContent = '●';
         }
     }
