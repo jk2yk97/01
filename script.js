@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const allSubjects = document.querySelectorAll('li');
     const semesters = document.querySelectorAll('.semester');
     const secondSemester = semesters[1]; // II semestre 1er año
