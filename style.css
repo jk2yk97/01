@@ -115,3 +115,16 @@ li.completed {
     text-decoration: line-through;
     color: #aaa !important;
 }
+/* ... tu CSS anterior ... */
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa !important;
+}
+
+/* ✅ Agrega esto al final para quitar los puntos */
+ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
