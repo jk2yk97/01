@@ -57,11 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             semesters[1].querySelector('.status-dot').textContent = '●';
 
             secondSemSubjects.forEach(li => {
-                if (!li.classList.contains('completed')) {
-                    setLiState(li, 'activo');
-                } else {
-                    setLiState(li, 'activo');
-                }
+                setLiState(li, 'activo');
             });
         } else {
             semesters[1].classList.add('inactive');
