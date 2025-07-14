@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #8F13FC;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.year {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.year h2 {
+    color: #ED73D6;
+    border-bottom: 2px solid #F58FDE;
+    padding-bottom: 5px;
+}
+
+.semester {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.semester.active {
+    border-left: 5px solid #FC18A3;
+}
+
+.semester.inactive {
+    border-left: 5px solid #F58FDE;
+    opacity: 0.8;
+}
+
+.semester h3 {
+    margin-top: 0;
+    color: #ED73D6;
+}
+
+.status-dot {
+    color: #FC18A3;
+}
+
+.semester.inactive .status-dot {
+    color: #F58FDE;
+}
+
+.status-text {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.module {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.module h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Colores por tipo de módulo */
+.module.transversal {
+    background-color: #FBD3EC;
+}
+
+.module.transversal h4 {
+    color: #FC18A3;
+}
+
+.module.tecnico {
+    background-color: #E4B4FC;
+}
+
+.module.tecnico h4 {
+    color: #CC8CFC;
+}
+
+.module.practicas {
+    background-color: #FCECFB;
+}
+
+/* Quitar viñetas a todas las listas */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Lista de clases */
+.module ul li {
+    margin-bottom: 5px;
+    color: #8F13FC;
+    cursor: pointer;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+/* Cuando semestre inactivo, li bloqueados se ven con color más claro */
+.semester.inactive li {
+    color: #C64EFC;
+}
+
+/* Clases para estado de las materias */
+li.activo {
+    opacity: 1;
+    pointer-events: auto;
+    color: #8F13FC;
+    cursor: pointer;
+}
+
+li.bloqueado {
+    opacity: 0.4;
+    pointer-events: none;
+    color: #C64EFC;
+    cursor: default;
+}
+
+/* Completado */
+li.completed {
+    text-decoration: line-through;
+    color: #aaa !important;
+}
