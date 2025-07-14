@@ -26,113 +26,130 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.year h2 {
+/* 1er Año: tonos rosas */
+.year:nth-of-type(1) {
+    color: #FC18A3;
+}
+
+.year:nth-of-type(1) h2 {
     color: #ED73D6;
     border-bottom: 2px solid #F58FDE;
-    padding-bottom: 5px;
 }
 
-.semester {
-    margin-bottom: 25px;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.semester.active {
+.year:nth-of-type(1) .semester.active {
     border-left: 5px solid #FC18A3;
 }
 
-.semester.inactive {
+.year:nth-of-type(1) .semester.inactive {
     border-left: 5px solid #F58FDE;
     opacity: 0.8;
 }
 
-.semester h3 {
-    margin-top: 0;
-    color: #ED73D6;
-}
-
-.status-dot {
+.year:nth-of-type(1) .status-dot {
     color: #FC18A3;
 }
 
-.semester.inactive .status-dot {
+.year:nth-of-type(1) .semester.inactive .status-dot {
     color: #F58FDE;
 }
 
-.status-text {
-    font-size: 0.9em;
-    font-weight: normal;
-}
-
-.module {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.module h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-/* Colores por tipo de módulo */
-.module.transversal {
+.year:nth-of-type(1) .module.transversal {
     background-color: #FBD3EC;
 }
 
-.module.transversal h4 {
+.year:nth-of-type(1) .module.transversal h4 {
     color: #FC18A3;
 }
 
-.module.tecnico {
+.year:nth-of-type(1) .module.tecnico {
     background-color: #E4B4FC;
 }
 
-.module.tecnico h4 {
+.year:nth-of-type(1) .module.tecnico h4 {
     color: #CC8CFC;
 }
 
-.module.practicas {
+.year:nth-of-type(1) .module.practicas {
     background-color: #FCECFB;
 }
 
-/* Quitar viñetas a todas las listas */
-ul, ol {
+/* 2do Año: tonos morados */
+.year:nth-of-type(2) {
+    color: #6A0DAD;
+}
+
+.year:nth-of-type(2) h2 {
+    color: #8A2BE2;
+    border-bottom: 2px solid #A378F7;
+}
+
+.year:nth-of-type(2) .semester.active {
+    border-left: 5px solid #6A0DAD;
+}
+
+.year:nth-of-type(2) .semester.inactive {
+    border-left: 5px solid #A378F7;
+    opacity: 0.8;
+}
+
+.year:nth-of-type(2) .status-dot {
+    color: #6A0DAD;
+}
+
+.year:nth-of-type(2) .semester.inactive .status-dot {
+    color: #A378F7;
+}
+
+.year:nth-of-type(2) .module.transversal {
+    background-color: #D9C5FF;
+}
+
+.year:nth-of-type(2) .module.transversal h4 {
+    color: #6A0DAD;
+}
+
+.year:nth-of-type(2) .module.tecnico {
+    background-color: #C3B1FF;
+}
+
+.year:nth-of-type(2) .module.tecnico h4 {
+    color: #A378F7;
+}
+
+.year:nth-of-type(2) .module.practicas {
+    background-color: #E6DBFF;
+}
+
+/* Quitar viñetas y margenes en todas las listas de semestre y módulo */
+.semester ul,
+.module ul {
     list-style: none;
     padding-left: 0;
     margin-left: 0;
 }
 
-/* Lista de clases */
+/* Lista de materias */
 .module ul li {
     margin-bottom: 5px;
-    color: #8F13FC;
+    color: inherit;
     cursor: pointer;
     transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-/* Cuando semestre inactivo, li bloqueados se ven con color más claro */
-.semester.inactive li {
-    color: #C64EFC;
-}
-
-/* Clases para estado de las materias */
+/* Estados activo/bloqueado para materias */
 li.activo {
     opacity: 1;
     pointer-events: auto;
-    color: #8F13FC;
     cursor: pointer;
 }
 
 li.bloqueado {
     opacity: 0.4;
     pointer-events: none;
-    color: #C64EFC;
     cursor: default;
 }
 
-/* Completado */
+/* Materias completadas */
 li.completed {
     text-decoration: line-through;
     color: #aaa !important;
