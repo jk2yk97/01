@@ -98,7 +98,7 @@ h1 {
 li.completed > span {
     text-decoration-line: line-through;
     text-decoration-style: wavy;
-    text-decoration-color: #6a1b6a;
+    text-decoration-color: #4b3821;
     text-decoration-thickness: 2px;
     text-underline-position: under;
 }
@@ -125,7 +125,6 @@ li.completed > span {
     min-width: 300px;
 }
 
-/* MODAL */
 .modal {
     display: none;
     position: fixed;
