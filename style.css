@@ -92,7 +92,7 @@ h1 {
 .semester.inactive-1 li,
 .semester.active-2 li,
 .semester.inactive-2 li {
-    color: #927f6a;
+color: #927f6a;
 }
 
 li.completed > span {
