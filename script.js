@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const year1 = document.querySelector('.year-1');
   const year2 = document.querySelector('.year-2');
 
-  // Cargar estado desde localStorage
   allSubjects.forEach(li => {
     const key = li.querySelector('span').textContent.trim();
     const saved = localStorage.getItem(key);
@@ -123,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Modal functionality
   const modal = document.getElementById('infoModal');
   const form = document.getElementById('moduleForm');
   const modalTitle = document.getElementById('modalTitle');
@@ -173,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
   saveBtn.addEventListener('click', function() {
     saveFormData();
     modal.style.display = 'none';
-    alert('¡Guardado con éxito!');
+    alert('💟 Guardado');
   });
 
   window.addEventListener('click', function(e) {
