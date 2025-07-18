@@ -1,9 +1,9 @@
 ![Banner del proyecto](https://raw.githubusercontent.com/jk2yk97/OO2/refs/heads/main/banner.png)
-# ‪‪❤︎‬ Malla Curricular
+# ‪‪⋆˚࿔ ꒰ Malla Curricular ;;
 
 Este proyecto es una *visualización interactiva* de la malla curricular de los cursos de **chino mandarín**, niveles: principiante, intermedio y avanzado.
 
-### [📘](https://jk2yk97.github.io/xd/)
+### [🧊](https://jk2yk97.github.io/xd/)
 
 ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚
 
