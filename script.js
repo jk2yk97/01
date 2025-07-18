@@ -60,8 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (isCompleted('中文水平五级')) enableLevel('中文水平六级');
     }
+
+    allLevels.forEach(li => {
+        li.addEventListener('click', function(e) {
+            if (e.target.closest('.info-btn') || this.classList.contains('disabled')) return;
             
             this.classList.toggle('completed');
+            const levelName = this.querySelector('span').textContent.trim();
             localStorage.setItem(levelName, this.classList.contains('completed') ? 'completed' : '');
             checkUnlocking();
         });
