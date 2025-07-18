@@ -401,3 +401,34 @@ li.completed > span {
         white-space: normal;
     }
 }
+
+body, html {
+    overflow-x: hidden;
+}
+
+.container {
+    overflow: hidden;
+}
+
+[class*="year-"], 
+.semester, 
+.modal-content,
+.module {
+    overflow: hidden;
+}
+
+.module li {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+.modal-content {
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .years-wrapper {
+        overflow: visible;
+    }
+}
