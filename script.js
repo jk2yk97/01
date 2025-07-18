@@ -60,26 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (isCompleted('中文水平五级')) enableLevel('中文水平六级');
     }
-
-
-    allLevels.forEach(li => {
-        li.addEventListener('click', function(e) {
-            if (e.target.closest('.info-btn') || this.classList.contains('disabled')) return;
-            
-            const levelName = this.querySelector('span').textContent.trim();
-            const requirements = {
-                '中文水平一级': null,
-                '中文水平二级': '中文水平一级',
-                '中文水平三级': '中文水平二级',
-                '中文水平四级': '中文水平三级',
-                '中文水平五级': '中文水平四级',
-                '中文水平六级': '中文水平五级'
-            };
-            
-            if (requirements[levelName] && !isCompleted(requirements[levelName])) {
-                alert(`请先完成 ${requirements[levelName]}`);
-                return;
-            }
             
             this.classList.toggle('completed');
             localStorage.setItem(levelName, this.classList.contains('completed') ? 'completed' : '');
