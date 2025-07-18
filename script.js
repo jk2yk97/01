@@ -298,9 +298,9 @@ function checkUnlocking() {
             
             function formatDate(date) {
                 if (!date) return '';
-                const weekday = date.toLocaleDateString('es', { weekday: 'short' }).replace('.', '');
+                const weekday = date.toLocaleDateString('zh-CN', { weekday: 'short' }).replace('.', '');
                 const day = date.getDate();
-                const month = date.toLocaleDateString('es', { month: 'short' }).replace('.', '');
+                const month = date.toLocaleDateString('zh-CN', { month: 'short' }).replace('.', '');
                 const year = date.getFullYear();
                 return `${weekday}., ${day} de ${month}. de ${year}`;
             }
@@ -316,7 +316,7 @@ function checkUnlocking() {
             function generateCalendarHTML(date) {
                 const year = date.getFullYear();
                 const month = date.getMonth();
-                const monthName = date.toLocaleString('es', { month: 'long' });
+                const monthName = date.toLocaleString('zh-CN', { month: 'long' });
                 
                 const firstDay = new Date(year, month, 1);
                 const lastDay = new Date(year, month + 1, 0);
