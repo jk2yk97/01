@@ -1,7 +1,7 @@
 ![项目横幅](https://raw.githubusercontent.com/jk2yk97/OO2/refs/heads/main/banner.png)
 # ‪‪⋆˚࿔ ꒰ 课程学习路径 ;;
 
-本项目是一个**互动式可视化图**，展示中文课程的学习路径，包含：**初级、中级和高级**三个等级。
+本项目是一个*互动式可视化图*，展示中文课程的学习路径，包含：**初级、中级和高级**三个等级。
 
 ### [🧊](https://jk2yk97.github.io/xd/)
 
