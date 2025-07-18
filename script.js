@@ -154,7 +154,7 @@ function checkUnlocking() {
         const date = new Date(dateString);
         if (isNaN(date.getTime())) return '';
         const options = { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' };
-        return date.toLocaleDateString('es-ES', options).replace('.', '');
+        return date.toLocaleDateString('zh-CN', options).replace('.', '');
     }
 
     function saveFormData() {
