@@ -222,6 +222,8 @@ function checkUnlocking() {
         datePickers.forEach(picker => {
             const dateInput = picker.querySelector('.date-input');
             const calendarDropdown = picker.querySelector('.calendar-dropdown');
+
+            dateInput.placeholder = "选择日期";
             
             let currentDate = new Date();
             let selectedDate = null;
@@ -323,17 +325,17 @@ function checkUnlocking() {
                 let html = `
                     <div class="calendar-header">
                         <button class="calendar-nav prev-month">←</button>
-                        <div class="calendar-title">${monthName} ${year}</div>
+                        <div class="calendar-title">${year}年 ${monthName}</div>
                         <button class="calendar-nav next-month">→</button>
                     </div>
                     <div class="calendar-grid">
-                        <div class="calendar-day-header">L</div>
-                        <div class="calendar-day-header">M</div>
-                        <div class="calendar-day-header">M</div>
-                        <div class="calendar-day-header">J</div>
-                        <div class="calendar-day-header">V</div>
-                        <div class="calendar-day-header">S</div>
-                        <div class="calendar-day-header">D</div>
+                        <div class="calendar-day-header">一</div>
+                        <div class="calendar-day-header">二</div>
+                        <div class="calendar-day-header">三</div>
+                        <div class="calendar-day-header">四</div>
+                        <div class="calendar-day-header">五</div>
+                        <div class="calendar-day-header">六</div>
+                        <div class="calendar-day-header">日</div>
                 `;
                 
                 const firstDayOfWeek = firstDay.getDay() === 0 ? 6 : firstDay.getDay() - 1;
@@ -358,7 +360,7 @@ function checkUnlocking() {
                 
                 html += `</div>
                     <div class="calendar-actions">
-                        <button type="button" class="clear-date-btn">Borrar fecha</button>
+                        <button type="button" class="clear-date-btn">清除日期</button>
                     </div>`;
                 
                 return html;
