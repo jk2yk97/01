@@ -5,7 +5,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 20px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .container {
@@ -34,7 +34,7 @@ h1 {
 .year-1 h2, .year-2 h2, .year-3 h2 {
     color: #3f586b;
     font-size: 35px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 20px;
     margin-top: 20px;
     padding-left: 18px;
@@ -55,7 +55,7 @@ h1 {
     pointer-events: auto;
     color: #88adc6;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .module {
@@ -69,7 +69,7 @@ h1 {
     color: #88adc6;
     cursor: pointer;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bolder;
     position: relative;
     display: flex;
     align-items: center;
@@ -170,12 +170,12 @@ li.completed > span {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .modal-content label {
     color: #88adc6;
-    font-weight: bold;
+    font-weight: bolder;
     display: block;
     margin: 15px 0 5px;
 }
@@ -187,7 +187,7 @@ li.completed > span {
     border: 1px solid #b5c0d4;
     border-radius: 8px;
     color: #a3cbe2;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 15px;
     box-sizing: border-box;
     max-width: 100%;
@@ -206,7 +206,7 @@ li.completed > span {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: bolder;
     width: 100%;
     margin-top: 10px;
 }
@@ -262,7 +262,7 @@ li.completed > span {
     border: 1px solid #b5c3cc;
     border-radius: 8px;
     color: #88adc6;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: #ffffff;
     box-sizing: border-box;
     cursor: pointer;
@@ -307,7 +307,7 @@ li.completed > span {
 }
 
 .calendar-title {
-    font-weight: bold;
+    font-weight: bolder;
     color: #88adc6;
     font-size: 14px;
 }
@@ -327,7 +327,7 @@ li.completed > span {
     padding: 5px 10px;
     cursor: pointer;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-left: auto;
     transition: background-color 0.2s;
 }
@@ -346,7 +346,7 @@ li.completed > span {
 
 .calendar-day-header {
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 3px;
     color: #5a8293;
     font-size: 11px;
@@ -380,7 +380,7 @@ li.completed > span {
     font-size: 14px;
     cursor: pointer;
     color: #88adc6;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 0 5px;
 }
 
