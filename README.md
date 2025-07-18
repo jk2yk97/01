@@ -1,27 +1,23 @@
-![Banner del proyecto](https://raw.githubusercontent.com/jk2yk97/OO2/refs/heads/main/banner.png)
-# ‪‪⋆˚࿔ ꒰ Malla Curricular ;;
+![项目横幅](https://raw.githubusercontent.com/jk2yk97/OO2/refs/heads/main/banner.png)
+# ‪‪⋆˚࿔ ꒰ 课程学习路径 ;;
 
-Este proyecto es una *visualización interactiva* de la malla curricular de los cursos de **chino mandarín**, niveles: principiante, intermedio y avanzado.
+本项目是一个**互动式可视化图**，展示中文课程的学习路径，包含：**初级、中级和高级**三个等级。
 
 ### [🧊](https://jk2yk97.github.io/xd/)
 
 ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚
 
-### ꒰ᐢ. .ᐢ꒱&nbsp;&nbsp;&nbsp;Características
+### ꒰ᐢ. .ᐢ꒱&nbsp;&nbsp;&nbsp;项目特色
 
-> **ೀ&nbsp;&nbsp;Organización por niveles y cursos.**
-> 
-> **ೀ&nbsp;&nbsp;Ventana de información sobre la clase.**
-> 
-> **ೀ&nbsp;&nbsp;Representación visual de módulos no reparables y dependencias.**
+> **ೀ&nbsp;&nbsp;按等级和课程组织内容。**  
+> **ೀ&nbsp;&nbsp;课程信息窗口展示。**  
+> **ೀ&nbsp;&nbsp;可视化显示不可补修模块和依赖关系。**
 
 &nbsp;<br>
 ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚ ——— ˚ ༘ ೀ⋆｡˚
 
-### ꒰ᐢ. .ᐢ꒱&nbsp;&nbsp;&nbsp;Este proyecto fue desarrollado usando
+### ꒰ᐢ. .ᐢ꒱&nbsp;&nbsp;&nbsp;本项目使用以下技术开发：
 
-> **ೀ&nbsp;&nbsp;HTML**
-> 
-> **ೀ&nbsp;&nbsp;CSS**
-> 
+> **ೀ&nbsp;&nbsp;HTML**  
+> **ೀ&nbsp;&nbsp;CSS**  
 > **ೀ&nbsp;&nbsp;JavaScript**
