@@ -35,32 +35,62 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    function checkUnlocking() {
+function checkUnlocking() {
+    disableLevel('中文水平二级');
+    disableLevel('中文水平三级');
+    disableLevel('中文水平四级');
+    disableLevel('中文水平五级');
+    disableLevel('中文水平六级');
+    
+    document.querySelector('.year-2').classList.add('inactive');
+    document.querySelector('.year-2').classList.remove('active');
+    document.querySelector('.year-3').classList.add('inactive');
+    document.querySelector('.year-3').classList.remove('active');
+
+    if (isCompleted('中文水平一级')) {
+        enableLevel('中文水平二级');
+    } else {
         disableLevel('中文水平二级');
         disableLevel('中文水平三级');
         disableLevel('中文水平四级');
         disableLevel('中文水平五级');
         disableLevel('中文水平六级');
-        
-        if (isCompleted('中文水平一级')) enableLevel('中文水平二级');
-        
-        if (isCompleted('中文水平二级')) {
-            enableLevel('中文水平三级');
-            document.querySelector('.year-2').classList.add('active');
-            document.querySelector('.year-2').classList.remove('inactive');
-        }
-        
-        if (isCompleted('中文水平三级')) enableLevel('中文水平四级');
-        
-        if (isCompleted('中文水平四级')) {
-            enableLevel('中文水平五级');
-            document.querySelector('.year-3').classList.add('active');
-            document.querySelector('.year-3').classList.remove('inactive');
-        }
-        
-        if (isCompleted('中文水平五级')) enableLevel('中文水平六级');
     }
-
+    
+    if (isCompleted('中文水平二级')) {
+        enableLevel('中文水平三级');
+        document.querySelector('.year-2').classList.add('active');
+        document.querySelector('.year-2').classList.remove('inactive');
+    } else {
+        disableLevel('中文水平三级');
+        disableLevel('中文水平四级');
+        disableLevel('中文水平五级');
+        disableLevel('中文水平六级');
+    }
+    
+    if (isCompleted('中文水平三级')) {
+        enableLevel('中文水平四级');
+    } else {
+        disableLevel('中文水平四级');
+        disableLevel('中文水平五级');
+        disableLevel('中文水平六级');
+    }
+    
+    if (isCompleted('中文水平四级')) {
+        enableLevel('中文水平五级');
+        document.querySelector('.year-3').classList.add('active');
+        document.querySelector('.year-3').classList.remove('inactive');
+    } else {
+        disableLevel('中文水平五级');
+        disableLevel('中文水平六级');
+    }
+    
+    if (isCompleted('中文水平五级')) {
+        enableLevel('中文水平六级');
+    } else {
+        disableLevel('中文水平六级');
+    }
+}
 
     allLevels.forEach(li => {
         li.addEventListener('click', function(e) {
